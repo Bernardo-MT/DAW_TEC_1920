@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Desarrollo de aplicaciones web</title>
+</head>
+
+<body>
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl" href="index.html">Desarrollo de apps web</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="u1.html">Unidad 1 </a></li>
+                <li><a href="u2.html">Unidad 2 </a></li>
+                <li><a href="u3.html">Unidad 3 </a></li>
+                <li><a>Unidad 4 </a></li>
+                <li><a>Unidad 5 </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="basis-6/12">
+            <ul class="ml-8">
+                <li class="my-2 text-3xl font-bold"> U3 - DESARROLLO DEL LADO DEL SERVIDOR </li>
+                <ul>
+                    <li class="ml-8 my-2 text-2xl font-semibold"> 3.1 Introducción al desarrollo web del lado del servidor</li>
+                    <ul class="ml-8 my-2">
+                        <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad3/3.1 Introducción a la Programación del Lado del Servidor.pdf')">3.1 Introducción al desarrollo de aplicaciones web del lado del servidor </button> </li>
+                        <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad3/3.1.1 Comparación ente los lenguajes de programación del lado del servidor.pdf')">3.1.1. Comparación entre los lenguajes de programación del lado del servidor </button> </li>
+                        <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad3/3.1.2 Creación de sitios web estáticos mediante herramientas en linea.pdf')">3.1.2 Herramientas para crear sitios web estáticos </button> </li>
+                    </ul>
+
+                    <!-- <li class="ml-8 mb-2 mt-16 text-2xl font-semibold"> 1.2 Fundamentos de HTML</li>
+                    <ul class="ml-8 my-2">
+                        <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad1/1.2.1 Estructura Básica de un Documento HTML.pdf')">1.2.1 Estructura básica de un documento HTML </button> </li>
+                        <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad1/1.2.2 Etiquetas y atributos principales.pdf')">1.2.2 Etiquetas y atributos principales </button> </li>
+                        <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad1/1.2.3 Formularios y Elementos Multimedia en un Documento HTML.pdf')">1.2.3 Formularios y elementos multimedia </button> </li>
+                    </ul> -->
+                </ul>
+            </ul>
+        </div>
+        <!-- <div class="basis-6/12">
+            <ul class="ml-8">
+                <li class="my-2 text-3xl font-bold">&nbsp;</li>
+                <li class="ml-8 mb-2 mt-4 text-2xl font-semibold"> 1.3 Fundamentos de CSS</li>
+                <ul class="ml-8 my-2">
+                    <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad1/1.3.1 Selectores y propiedades basicas CSS.pdf')">1.3.1 Selectores y propiedades básicas </button> </li>
+                    <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad1/1.3.2 El Modelo de Caja.pdf')">1.3.2 Modelo de caja (box model) </button> </li>
+                    <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad1/1.3.3 Diseño Responsivo con Media Queries.pdf')">1.3.3 Diseño responsivo con media queries </button> </li>
+                </ul>
+
+                <li class="ml-8 mb-2 mt-16 text-2xl font-semibold"> 1.4 Fundamentos de JavaScript</li>
+                <ul class="ml-8 my-2">
+                    <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad1/1.4.1 Sintaxis y Estructura del Lenguaje de JavaScript.pdf')">1.4.1 Sintaxis y estructura del lenguaje </button> </li>
+                    <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad1/1.4.2 Manipulación del DOM.pdf')">1.4.2 Manipulación del DOM </button> </li>
+                    <li class="ml-8 my-2"> <button class="btn link text-m" onclick="showPdfModal('pdfs/Unidad1/1.4.3 Eventos y Manejo de Eventos con JavaScript.pdf')">1.4.3 Eventos y manejo de eventos </button> </li>
+                </ul>
+            </ul>
+            </ul>
+        </div> -->
+    </div>
+
+    <dialog id="my_modal" class="modal">
+        <div class="modal-box w-11/12 max-w-5xl">
+            <h3 class="text-lg font-bold py-4">Visualizar documento</h3>
+            <embed id="pdfViewer" src="" width="100%" height="500px" type="application/pdf">
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+    <footer class="footer footer-center bg-base-300 text-base-content p-4 mt-16">
+        <aside>
+            <p>Copyright © Francisco Bernardo Murillo &emsp; &emsp; &emsp; Apps Web 19:00 - 20:00</p>
+        </aside>
+    </footer>
+
+    <script>
+        function showPdfModal(pdfPath) {
+            document.getElementById("pdfViewer").src = pdfPath;
+            document.getElementById("my_modal").showModal();
+        }
+    </script>
+</body>
+
+</html>
